@@ -1,0 +1,162 @@
+.create-event-form {
+  width: 80%; 
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin: 20px auto;
+}
+
+.create-event-form h2 {
+  text-align: center;
+  color: #333;
+}
+
+.create-event-form label {
+  font-weight: bold;
+  margin-top: 5px;
+}
+
+.create-event-form input,
+.create-event-form select,
+.create-event-form textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+.create-event-form textarea {
+  min-height: 80px;
+}
+
+.create-event-form .date-time {
+  display: flex;
+  gap: 10px;
+}
+
+.create-event-form button {
+  padding: 12px;
+  background-color: white;
+  color: black;
+  border: 2px solid black;
+  border-radius: 25px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-top: 10px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.create-event-form button:hover {
+  background-color: #262626;
+  color: white;
+}
+
+.add-speaker-btn, .remove-speaker-btn, .submit-btn {
+  padding: 10px 10px;
+  background-color: white;
+  color: black;
+  border: 1px solid black;
+  border-radius: 25px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.add-speaker-btn:hover, .remove-speaker-btn:hover, .submit-btn:hover {
+  background-color: #262626;
+  color: white;
+}
+
+.error {
+  color: red;
+  font-size: 12px;
+  margin-top: -5px;
+}
+
+.popup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #28a745;
+  color: white;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  z-index: 2000;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.popup button {
+  margin-top: 10px;
+  padding: 5px 10px;
+  background-color: white;
+  color: black;
+  border: 2px solid black;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.popup button:hover {
+  background-color: #262626;
+  color: white;
+}
+
+.speaker-inputs {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.speaker-inputs input {
+  flex: 1;
+}
+
+.speaker-card {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: #f9f9f9;
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 5px;
+}
+
+.speaker-card img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+.speaker-card button {
+  padding: 5px 10px;
+  background-color: white;
+  color: black;
+  border: 2px solid black;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.speaker-card button:hover {
+  background-color: #262626;
+  color: white;
+}
+
+@media (max-width: 768px) {
+    .create-event-form {
+        width: 100%; 
+      }
+  .speaker-inputs {
+    flex-direction: column; 
+  }
+}

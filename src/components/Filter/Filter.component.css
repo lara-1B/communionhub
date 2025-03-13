@@ -1,0 +1,60 @@
+.filter-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  padding: 15px;
+  background: #f8f8f8;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+.filter-container h3 {
+  margin-bottom: 10px;
+  color: #333;
+  font-size: 16px;
+  font-weight: bold;
+  flex-basis: 100%;
+}
+
+.filter-container input,
+.filter-container select {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 12px;
+  width: calc(33.33% - 10px);
+  box-sizing: border-box;
+}
+
+.filter-container input::placeholder {
+  color: #aaa;
+}
+
+.filter-container select {
+  background: #fff;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+.filter-container select:focus,
+.filter-container input:focus {
+  outline: none;
+  border-color: #007bff;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+@media (max-width: 768px) {
+  .filter-container input,
+  .filter-container select {
+    width: calc(50% - 10px);
+  }
+}
+
+@media (max-width: 480px) {
+  .filter-container input,
+  .filter-container select {
+    width: 100%; 
+  }
+}
